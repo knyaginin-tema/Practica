@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Reviews</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__logo">
+						<img class="logotype" src="img/logo.png" alt="" height="75px">
+					</div>
+					
+					<nav class="nav" id="nav">
+						<a class="nav__link" href="index.html">ГЛАВНАЯ</a>
+						<a class="nav__link" href="courses.html">СТОИМОСТЬ КУРСОВ</a>
+						<a class="nav__link" href="reviews.html">ОТЗЫВЫ</a>
+						<a class="nav__link" href="contacts.html">КОНТАКТЫ</a>
+						<a class="nav__link">+7 800 333 22 33</a>
+					</nav>
+				
+					<button type="button" class="burger" id="navToggle">
+						<span class="burger__item"></span>
+					</button>
+				
+				</div>
+			</div>
+		</header>
+		
+		<div class="intro">
+			<div class="container">
+				<div class="intro__inner">
+					<h1 class="intro__title">Обучение игре на гитаре - сложно и необыкновенно</h1>
+					<h2 class="intro__subtitle">Мы приглашаем Вас на пробное занятие. Наличие опыта не важно. Главное - страстное желание освоить гитарное мастерство. А наши преподаватели составят программу, подходящую именно Вам, и сделают занятия настоящим удовольствием.</h2>
+
+					<div class="intro__buttons">
+						<button class="btn  btn--red" type="button">Пробный урок бесплатно</button>
+						<button class="btn  btn--white" type="button">Записаться сейчас</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container container--white">
+			<h1 class="reviews__title">Отзывы о нашей школе</h1>
+			<div class="reviews__subtitle">Сотни учеников выпустились и довольны обучением</div>
+			
+			<div class="review">
+				<img class="review__avatar" src="img/avatar1.jpg" alt="" height="200px">
+				<div class="review__content">
+					<h2 class="review__author">Валерия</h2>
+					<div class="review__text">Уроки оказались потрясающе интересными и полезными. Огромное спасибо преподавателю, Ларисе, за все усилия и за подаренные нам мгновения гармонии и радости. Но помимо эмоций - очень помогло мне в моих занятиях музыкой, будь то чтение с листа, запоминание мелодии, понимание и подбор аккомпанемента и многое другое. Но в занятиях не стоит искать быстрых путей. Это всерьёз и надолго :)</div>
+				</div>
+			</div>
+			
+			<div class="review">
+				<img class="review__avatar" src="img/avatar2.jpg" alt="" height="200px">
+				<div class="review__content">
+					<h2 class="review__author">Мария</h2>
+					<div class="review__text">Хочу выразить большущую благодарность Ангелине Олеговне Грабко! Пришла к ней всего за месяц обучиться  игре, чтобы потом выступить с песней перед гостями, в бешеном темпе с Ангелиной Олеговной готовились. Очень классный педагог, говорит только правду, причём очень терпеливая, доступно объясняет все сложные моменты. Спасибо огромное! Гости были очень довольные</div>
+				</div>
+			</div>
+			
+			<div class="review">
+				<img class="review__avatar" src="img/avatar3.jpg" alt="" height="200px">
+				<div class="review__content">
+					<h2 class="review__author">Ольга</h2>
+					<div class="review__text">Хотим выразить огромную благодарность талантливому педагогу, Юлии Сергеевне Панкевич. Это очень добрый и интересный человек, который умеет найти индивидуальный подход к каждому ученику. А ещё большое спасибо администраторам! Они всегда внимательны, доброжелательны и с лёгкостью решают любой вопрос!</div>
+				</div>
+			</div>
+			
+			<div class="review">
+				<img class="review__avatar" src="img/avatar4.jpg" alt="" height="200px">
+				<div class="review__content">
+					<h2 class="review__author">Богдан</h2>
+					<div class="review__text">Меня привело Алексея Станкова желание научиться играть  музыку. Как в любой учёбе, для достижения целей необходима постоянная практика, организованная во времени дедлайнами. Также очевидно, что этот процесс должен контролироваться компетентными профессионалами. Джазовый ансамбль школы Виртуозы уже около года предоставляет мне эту возможность.</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container--gray">
+			<div class="post post--bas">
+				<img id="bas-pic" class="post__picture" src="img/basement.jpg" alt="" height="500px">
+					<div class="post__menu">
+						<h1 class="post__menu__title">Есть вопросы?</h1>
+						<h1 class="post__menu__title">Нужна консультация?</h1>
+						<div class="post__menu__block">
+							<div class="post__menu__indent">Оставьте заявку на сайте, и наши специалисты ответят на все Ваши вопросы!</div>
+							<div class="post__menu__indent">Введите имя</div>
+							<input class="post__text__field"type="text" placeholder="Введите имя">
+							<div class="post__menu__indent">Введите email</div>
+							<input class="post__text__field"type="text" placeholder="Введите email">
+							<div class="post__menu__indent">Введите телефон</div>
+							<input class="post__text__field"type="text" placeholder="ххх-ххх-ххх">	
+						</div>
+						<button class="btn  btn--red" type="button">Отправить заявку</button>
+					</div>
+			</div>
+		</div>
+		
+		
+		<div class="basement">
+			<div class="basement__left">
+				<img class="logotype" src="img/logo.png" alt="" height="75px">
+				<div>
+					<div class="basement__text">ООО «Школа искусств», 123456, г.Москва, ул. Центральная 1, офис 1 ИНН 1234567890 ОГРН 123456789012</div>
+					
+				</div>
+			</div>
+			<div class="basement__right">
+				<div class="basement__text">+7 800 333 22 33</div>
+				<div class="basement__text">Звонок по России бесплатный</div>
+			</div>
+		</div>
+		
+		<script src="app.js"></script>
+		
+	</body>
+</html>

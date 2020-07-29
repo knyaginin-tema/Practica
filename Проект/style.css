@@ -1,0 +1,788 @@
+body {
+	margin: 0px;
+	font-family: Areal;
+	font-size: 14px;
+	background-color: #F2F2F2;
+	
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 10px;
+}
+/*------------CONTAINER------------------*/
+.container {
+	width: 100%;
+	/*max-width: 1170px;*/
+	margin: 0 auto;
+	align-items: center;
+}
+
+.container--white{
+	background-color: #FFFFFF;
+	padding: 30px 30px;
+}
+
+.container--gray{
+	background-color: #F2F2F2;
+	padding: 30px 30px;
+}
+
+/*------------HEADER------------------*/
+
+.header {
+	background-color: #FFFFFF;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	padding: 10px 0;
+}
+
+.header__logo {
+	margin-left: 50px;
+}
+
+/*------------NAV------------------*/
+
+.nav {
+	display: flex;
+	font-size: 18px;
+}
+
+.nav__link {
+	margin-left:50px;
+	color: #333333;
+	text-decoration: none; /*убирает подчеркивание в ссылках*/
+}
+
+.nav__link:hover {
+	text-decoration: underline;
+}
+
+.nav__link:first-child{
+	margin-left: 0;
+}
+
+.nav__link:last-child{
+	margin-right: 50px;
+}
+
+.nav__link:last-child:hover {
+	text-decoration: none;
+}
+
+/*------------INTRO------------------*/
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	height: 750px;
+	background: #333333 URL(img/intro.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.intro__inner {
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro__title {
+	font-family: Arial;
+	font-size: 50px;
+	color: #F2F2F2;
+	margin: 0 0 40px;
+	line-height: 1;
+}
+
+.intro__subtitle {
+	font-weight: 400;
+	font-family: Arial;
+	color: #F2F2F2;
+	margin-bottom: 50px
+}
+
+.intro__buttons {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 100px;
+}
+
+/*------------BUTTONS------------------*/
+
+
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 20px;
+	max-width: 300px;
+	
+	border-radius: 10px;
+	
+	cursor: pointer;
+	
+	font-family: Arial;
+	font-size: 20px;
+	color: #F2F2F2;
+	text-decoration: none;
+	
+	transition: background .3s linear;
+}
+
+.btn--red {
+	border: 0;
+	background-color: #F06B00;
+}
+
+.btn--white {
+	padding: 8px 40px 8px;
+	border: 5;
+	background-color: rgba(242,242,242,0.0);
+}
+
+
+
+.btn--red:hover {
+	background-color: #C65401;
+}
+
+
+/*------------POSTS------------------*/
+
+.post {
+	width: 100%;
+	display: flex;
+}
+
+.post--bas {
+	
+}
+
+.post__picture {
+	
+}
+
+.post__text {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	padding: 15px 30px;
+}
+
+.post__menu {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 30px;
+}
+
+.post__title {
+	font-family: Arial;
+	font-size: 40px;
+	margin: 0 0 15px;
+	color: #333333;
+	text-align: center;
+}
+
+.post__menu__title {
+	font-family: Arial;
+	font-size: 40px;
+	margin: 0 0 15px;
+	color: #333333;
+}
+
+.post__indent {
+	font-family: Arial;
+	font-size: 14px;
+	
+	margin: 10px 0;
+	color: #333333;
+	text-align: justify;
+}
+
+.post__menu__indent {
+	font-family: Arial;
+	font-size: 16px;
+	
+	margin: 10px 0;
+	color: #333333;
+	text-align: justify;
+}
+
+.post__text__field {
+	width: 100%;
+	background-color: #F2F2F2;
+	border: 0;
+	border-bottom: 1px solid #333333;
+	font-size: 16px;
+	padding: 5px;
+}
+
+.post__menu__block {
+	margin: 20px 0;
+}
+
+
+/*------------BASEMENT------------------*/
+
+.basement {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.basement__right {
+	text-align: center;
+}
+
+.basement__left {
+	display: flex;
+	align-items: center;
+}
+
+.basement__text {
+	max-width: 500px;
+	font-family: Arial;
+	font-size: 16px;
+	color: #333333;
+}
+
+.basement__link {
+	color: #333333;
+	text-decoration: none;
+}
+
+.basement__link:hover {
+	text-decoration: underline;
+}
+
+/* COURSES
+=============================================================*/
+
+.courses {
+	display: flex;
+}
+
+.course {
+	width: 33%;
+
+	text-align: center;
+	
+	border: 1px solid #333333;
+	background-color: #F2F2F2;
+	
+	padding: 30px;
+	margin: 20px 10px;
+}
+
+.course__icon {
+	border-radius: 100px;
+}
+
+.course__title {
+	margin: 20px 0;
+	font-family: Arial;
+	font-size: 25px;
+	color: #333333;
+}
+
+.course__text {
+	font-family: Arial;
+	text-align: left;
+	font-size: 17px;
+	color: #333333;
+}
+
+.course__count {
+	margin: 20px 0;
+	font-family: Arial;
+	
+	color: #333333;
+}
+
+/* REVIEWS
+=============================================================*/
+
+.reviews__title {
+	font-family: Arial;
+	font-size: 30px;
+	color: #333333;
+	
+	text-align: center;
+}
+
+.reviews__subtitle {
+	font-family: Arial;
+	font-size: 20px;
+	color: #333333;
+	margin: 10px 0 50px;
+	text-align: center;
+}
+
+.review {
+	background-color: #F2F2F2;
+	margin: 10px 100px;
+	display: flex;
+	align-items: center;
+}
+
+.review__author {
+	font-family: Arial;
+	font-size: 20px;
+	color: #333333;
+	margin: 20px;
+}
+
+.review__text {
+	font-family: Arial;
+	font-size: 18px;
+	font-size: 5px 15px 20px;
+	color: #333333;
+	margin: 20px;
+}
+
+
+/* CONTACTS
+=============================================================*/
+
+.contact__text {
+	margin-left: 100px;
+	max-width: 500px;
+	font-family: Arial;
+	font-size: 20px;
+	color: #333333;
+}
+
+
+.burger {
+	display: none;
+	
+	background: none;
+	border: 1px solid #333333;
+	padding: 20px 10px;
+	
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.burger__item {
+	display: block;
+	width: 30px;
+	height: 3px;
+	
+	background-color: #333333;
+	
+	
+	color: transparent;
+	position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	
+	background-color: #333333;
+	
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+
+.burger__item:before {
+	top: -8px;
+}
+
+.burger__item:after {
+	bottom: -8px;
+}
+/* MEDIA
+=============================================================*/
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	
+}
+
+/* Landscape tablets and medium desktops (min-width: 992px) and*/
+@media (max-width: 1199px) {
+		/*index*/
+	
+	.nav {
+		font-size: 14px;
+	}
+	
+	.post__title {
+		font-size: 25px;
+		margin: 0 0 5px;
+	}
+	
+	.post__menu__title {
+		font-size: 25px;
+		margin: 0;
+	}
+	
+	#pic2 {
+		height: 325px;
+	}
+	
+	#bas-pic {
+		height: 425px;
+	}
+	
+	/*courses*/
+	
+	.course__icon {
+		height: 175px;
+	}
+	
+	.course__title {
+		margin: 20px 0;
+		font-size: 20px;
+	}
+
+	.course__text {
+		font-size: 16px;
+	}
+
+	.course__count {
+		margin: 20px 0;
+	}
+	
+	/*reviews*/
+	
+	.review {
+		margin: 10px 50px;
+	}
+	
+	.review__text {
+		font-size: 16px;
+		margin: 20px;
+	}
+}
+
+/* Portrait tablets and small desktops (min-width: 768px) and */
+@media (max-width: 991px) {
+	
+	.header__inner {
+		position: relative;
+	}
+	
+	.nav {
+		display: none;
+		width: 65%;
+		flex-direction: column;
+		
+		padding: 5px 10px;
+		background-color: #F2F2F2;
+		text-align: left;
+		
+		border: 1px solid #333333;
+		
+		position: absolute;
+		top: 100%;
+		right: 0;
+	}
+	
+	.nav.show {
+		display: flex;
+	}
+	
+	.nav__link {
+		font-weight: 500;
+		padding: 15px 15px 7px;
+		margin: 1px;
+	}
+	
+	.nav__link:last-child {
+		display: none;
+	}
+	
+	.burger {
+		display: block;
+	}
+	
+	.intro__inner {
+		padding: 0 40px;
+	}
+	
+	.intro__title {
+		font-size: 35px;
+	}
+	
+	.intro__subtitle {
+		font-size: 18px;
+	}
+	
+	.intro__buttons {
+		padding: 10px 30px;
+	}
+	
+	.post__menu__title {
+		text-align: center;
+	}
+	
+	.post--bas {
+		flex-wrap: wrap;
+	}
+	
+	.basement {
+		padding: 0px 20px;
+	}
+	
+	.basement__text {
+		max-width: 340px;
+		font-size: 12px;
+	}
+	
+	
+	#pic1 {
+		display: none;
+	}
+	
+	#pic2 {
+		display: none;
+	}
+	
+	#bas-pic {
+		height: auto;
+	}
+	
+	/*courses*/
+	
+	.course {
+		padding: 10px;
+		margin: 10px 5px;
+	}
+	
+	.course__icon {
+		height: 150px;
+	}
+	
+	.course__title {
+		margin: 20px 0;
+		font-size: 17px;
+	}
+
+	.course__text {
+		font-size: 14px;
+	}
+
+	.course__count {
+		margin: 20px 0;
+	}
+	
+	/*reviews*/
+	
+	.review {
+		margin: 10px 10px;
+	}
+	
+	.review__text {
+		font-size: 15px;
+		margin: 10px 20px;
+	}
+} 
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	
+	.logotype {
+		height: 50px;
+	}
+	
+	.header__logo {
+		margin-left: 0;
+	}
+	
+	.intro {
+		height: auto;
+		
+		padding: 50px 0;
+	}
+	
+	.btn--white {
+		display: none;
+	}
+	
+	.intro__buttons {
+		justify-content: center;
+		padding: 0;
+	}
+	
+	.basement__text {
+		font-size: 10px;
+	}
+	
+	#bas-pic {
+		display: none;
+	}
+	
+	/*courses*/
+	
+	.courses {
+		flex-wrap: wrap;
+	}
+	
+	.course {
+		width: 100%;
+	}
+	
+	.course__icon {
+		height: 200px;
+	}
+	
+	.course__title {
+		margin: 20px 0;
+		font-size: 25px;
+	}
+
+	.course__text {
+		font-size: 17px;
+	}
+	
+	/*reviews*/
+	
+	.review {
+		flex-wrap: wrap;
+		margin: 10px 50px;
+	}
+	
+	.review__avatar {
+		width: 100%;
+		height: auto;
+	}
+	
+	/*contacts*/
+	
+	.contact__text {
+		font-size: 18px;
+		margin-left: 30px;
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.container--gray {
+		padding: 0;
+		
+	}
+	
+	.container--white {
+		padding: 0 0 10px;
+	}
+	
+	
+	
+	.intro__title {
+		font-size: 25px;
+	}
+	
+	.intro__subtitle {
+		font-size: 15px;
+		text-align: justify;
+	}
+	
+	.btn {
+		font-size: 15px;
+	}
+	
+	.post__title {
+		font-size: 19px;
+	}
+	
+	.post__text {
+		font-size: 13px;
+	}
+	
+	.post__menu__title {
+		font-size: 20px;
+	}
+	
+	.post__menu__indent {
+		font-size: 12px;
+	
+		margin: 5px 0;
+	}
+
+	.post__text__field {
+		font-size: 12px;
+	}
+	
+	.basement__left .logotype {
+		display: none;
+	}
+	
+	.basement__text {
+		margin: 10px 0;
+	}
+	
+	.basement__right {
+		display: none;
+	}
+	
+	.post--bas {
+		
+	}
+	
+	
+	
+	/*courses*/
+	
+	.course {
+		margin: 10px 20px;
+	}
+	
+	/*reviews*/
+	
+	.reviews__title {
+		font-size: 20px;
+		padding-top: 20px;
+	}
+	
+	.reviews__subtitle {
+		font-size: 16px;
+		margin: 20px 20px;
+	}
+	
+	.review {
+		margin: 10px 20px;
+	}
+	
+	
+	
+	/*contacts*/
+	
+	.contact__text {
+		margin: 20px;
+		font-size: 15px;
+	}
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+
+}
+
+
+
+
+
+
