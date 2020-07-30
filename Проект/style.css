@@ -3,7 +3,6 @@ body {
 	font-family: Areal;
 	font-size: 14px;
 	background-color: #F2F2F2;
-	
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -21,7 +20,62 @@ p {
 	margin: 0 0 10px;
 }
 
+.darkBg {
+	display: none;
+	width: 100%;
+	height: 1100px;
+	background-color: rgba(10,10,10,0.6);
+	
+	top: 0;
+	left:0;
+	position: absolute;
+	z-index: 2;
+}
 
+.darkBg.show {
+	display: block;
+}
+
+.darkBg.fixed {
+	position: fixed;
+}
+
+.lightBox {
+	display: none;
+	position: absolute;
+	z-index: 3;
+	top: 20%;
+	left: 37.5%;
+	width: 25%;
+	
+	background-color: #F2F2F2;
+	padding: 30px 20px 0;
+}
+
+.lightBox__tittle {
+	font-size: 25px;
+	text-align: center;
+	font-family: Areal;
+	color: #333333;
+	margin-bottom: 20px;
+}
+
+.button__box {
+	width: 100%;
+	padding: 30px 20px;
+}
+
+.lightBox .btn {
+	width: 100%;
+}
+
+.lightBox.show {
+	display: block;
+}
+
+.lightBox.fixed {
+	position: fixed;
+}
 /*------------CONTAINER------------------*/
 .container {
 	width: 100%;
@@ -427,6 +481,11 @@ p {
 @media (max-width: 1199px) {
 		/*index*/
 	
+	.lightBox {
+		left: 33.3%;
+		width: 33.3%;
+	}
+	
 	.nav {
 		font-size: 14px;
 	}
@@ -482,6 +541,11 @@ p {
 
 /* Portrait tablets and small desktops (min-width: 768px) and */
 @media (max-width: 991px) {
+	
+	.lightBox {
+		left: 30%;
+		width: 40%;
+	}
 	
 	.header__inner {
 		position: relative;
@@ -606,6 +670,11 @@ p {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 	
+	.lightBox {
+		left: 20%;
+		width: 60%;
+	}
+	
 	.logotype {
 		height: 50px;
 	}
@@ -682,6 +751,12 @@ p {
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+	
+	.lightBox {
+		left: 10%;
+		width: 80%;
+	}
+	
 	.container--gray {
 		padding: 0;
 		

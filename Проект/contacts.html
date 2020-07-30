@@ -6,9 +6,27 @@
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
 	</head>
 	<body>
+	
+		<div class="darkBg" id="darkBg">
+		</div>
+		
+		<div class="lightBox" id="lightBox">
+			<div class="lightBox__tittle">Оставить заявку</div>
+			<div class="post__menu__indent">Введите имя</div>
+			<input class="post__text__field"type="text" placeholder="Введите имя">
+			<div class="post__menu__indent">Введите email</div>
+			<input class="post__text__field"type="text" placeholder="Введите email">
+			<div class="post__menu__indent">Введите телефон</div>
+			<input class="post__text__field"type="text" placeholder="ххх-ххх-ххх">	
+			<div class="button__box">
+				<button class="btn  btn--red" type="button">Отправить заявку</button>
+			</div>
+			
+		</div>
+	
 		<header class="header">
 			<div class="container">
 				<div class="header__inner">
